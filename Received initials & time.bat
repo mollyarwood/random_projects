@@ -1,7 +1,7 @@
 ::batch to create recieved time folder
 @echo off
 
-SET /I initials=[Please Enter Your Initials]
+SET /p initials=[Please Enter Your Initials]
 
 for /f "tokens=1 delims=: " %%h in ('time /T') do set hour=%%h
 for /f "tokens=2 delims=: " %%m in ('time /T') do set minutes=%%m
